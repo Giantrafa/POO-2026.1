@@ -10,5 +10,7 @@ public class Main{
             }
             System.out.println();
         }
+        System.out.println("Comprimento de: "+r.comprimento());
+        System.out.println("Area de: "+r.area());        
     }
 }
