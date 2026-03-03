@@ -17,5 +17,4 @@ public class Quadrado{
     double comprimento(){
         return 4 * this.lado;        
     }
-
 }
