@@ -1,28 +1,39 @@
 package anotacao;
 
-public class Carro {
-    String marca;
-    String modelo;
-    Motor motor; // objeto como tipo — composição
+public class Carro{
+    
+    private String marca;
+    private String modelo;
+    // aqui eu chamo |Motor| como se fosse um tipo, onde pegara os atributos q foram impostos nele
+    private Motor motor;               
+    
 
-    // construtor completo
-    // chama da main e aplica na classe
     public Carro(String marca, String modelo, Motor motor) {
-        this.marca  = marca;
+        this.marca = marca;
         this.modelo = modelo;
-        this.motor  = motor;
+        this.motor = motor;
     }
 
-    // sobrecarga — chama Carro mais de uma vez
-    public Carro(String marca, String modelo) {
-        this(marca, modelo, null);
+
+    public String getMarca() {
+        return marca;
     }
 
-    //toString() - no int ele iria mostra o numero e onde esta localisado na memoria
-    // agora ele so mostra o numero
-    public String toString() {
-        return "Marca: "  + marca  +
-            "\nModelo: " + modelo +
-            "\nMotor: "  + motor;
+    public String getModelo() {
+        return modelo;
+    }
+
+    public Motor getMotor() {
+        return motor;
+    }
+    
+    public void setMotor(Motor motor) {
+        this.motor = motor;
+    }
+
+    public String toString() {        
+        return "Marca: " + marca +
+               "\nModelo: " + modelo +
+               "\nMotor -" + motor;
     }
 }
