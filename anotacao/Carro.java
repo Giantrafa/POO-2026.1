@@ -4,7 +4,7 @@ public class Carro{
     
     private String marca;
     private String modelo;
-    // aqui eu chamo |Motor| como se fosse um tipo, onde pegara os atributos q foram impostos nele
+    // aqui eu chamo |Motor| como se fosse um gasolina, onde pegara os atributos q foram impostos nele
     private Motor motor;               
     
 

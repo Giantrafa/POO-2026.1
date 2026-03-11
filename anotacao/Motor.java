@@ -3,14 +3,14 @@ package anotacao;
 public class Motor {    
 
     //Defino como Private para quem apenas quem esta dentro do |Motor| pode usar ele
-    public String tipo;
+    public String combustivel;
     private int potencia;
     private int qtdPistao;
 
     //Crio o constructor com o |this.| para poder atribuir os dados de fora com os de dentro
     //O nome q e chamado pode ser outro mas por conveniência ele e o mesmo
-    public Motor(String tipo, int potencia, int qtdPistao) {        
-        this.tipo = tipo;
+    public Motor(String combustivel, int potencia, int qtdPistao) {        
+        this.combustivel = combustivel;
         this.potencia = potencia;
         this.qtdPistao = qtdPistao;
     }
@@ -31,6 +31,6 @@ public class Motor {
 
     //O retorno para quem estiver chamando a classe
     public String toString() {
-        return " Combustivel:"+ tipo + " - " + "CV:" + potencia + " - " + "Pistão:" + qtdPistao;
+        return " Combustivel:"+ combustivel + " - " + "CV:" + potencia + " - " + "Pistão:" + qtdPistao;
     }
 }
