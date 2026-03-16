@@ -1,20 +1,34 @@
 package tarefa06;
+import java.util.Scanner;
 
 public class Main06 {
-    public static void main(String[] args) {
-         PessoaFisica p1 = new PessoaFisica("Carlos", 25, "123.456.789-00");
-
-        System.out.println(p1.getNome());
-        System.out.println(p1.getIdade());
-        System.out.println(p1.getCpf());
-
-        p1.setNome("João");
-        p1.setIdade(30);
-        p1.setCpf("999.999.999-99");
-
-        System.out.println("Novo nome: " + p1.getNome());
-        System.out.println("Nova idade: " + p1.getIdade());
-        System.out.println("Novo CPF: " + p1.getCpf());
+    public static Scanner input = new Scanner(System.in);
+    public static void main(String[] args){
+        String nome, info;
+        int idade;
         
+        nome = input.next();
+        idade = input.nextInt();
+        info = input.next();
+        
+        Pessoa pf = new PessoaFisica(nome, idade, info);
+        imprime(pf);
+
+        nome = input.next();
+        idade = input.nextInt();
+        info = input.next();
+        
+        Pessoa pj = new PessoaJuridica(nome, idade, info);
+        imprime(pj);
+    }
+
+    public static void imprime(Pessoa p){
+        System.out.println("Pessoa: "+ p.getNome());
+        System.out.println("Idade: "+ p.getIdade());
+
+        if(p instanceof PessoaFisica){
+            System.out.println("CPF: "+ ((PessoaFisica)p).getCpf());
+        }else
+            System.out.println("CNPJ: "+ ((PessoaJuridica)p).getCnpj());
     }
 }
