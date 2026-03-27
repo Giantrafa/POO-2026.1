@@ -1,4 +1,4 @@
-package provaTest;
+package RevisaoProva;
 
 public class Desenvolvedor extends Funcionario{
      private String linguagem;

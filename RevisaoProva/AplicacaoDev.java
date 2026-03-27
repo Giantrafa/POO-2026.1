@@ -1,4 +1,4 @@
-package provaTest;
+package RevisaoProva;
 import java.util.ArrayList;
 
 public class AplicacaoDev {

@@ -1,4 +1,4 @@
-package provaTest;
+package RevisaoProva;
 
 public class Gerente extends Funcionario {
     private String departamento;
