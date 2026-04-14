@@ -1,5 +1,6 @@
 package tarefa07;
-
+//Classe Abistrato, nao pode ser instanciada, so pode ser herdada
+//por isso ela e meio generica
 public abstract class Funcionario{
     private String nome;
     private double salario;
