@@ -1,4 +1,5 @@
 package tarefa06;
+//Classe Filha de Pessoa
 
 public class PessoaFisica extends Pessoa {
     private String cpf;

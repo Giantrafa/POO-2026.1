@@ -1,7 +1,8 @@
 package tarefa06;
+//Classe Filha de Pessoa
 
 public class PessoaJuridica extends Pessoa {
-        private String cnpj;
+    private String cnpj;
 
     public PessoaJuridica (String nome, int idade, String cnpj){
         super(nome,idade);

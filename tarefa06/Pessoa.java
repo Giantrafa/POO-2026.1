@@ -1,4 +1,5 @@
 package tarefa06;
+//Classe Pai para PessoaFisica e PessoaJuridica
 
 public class Pessoa {
     private String nome;

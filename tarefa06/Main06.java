@@ -25,7 +25,8 @@ public class Main06 {
     public static void imprime(Pessoa p){
         System.out.println("Pessoa: "+ p.getNome());
         System.out.println("Idade: "+ p.getIdade());
-
+        
+        //Polymorfia para saber se é PessoaFisica ou PessoaJuridica
         if(p instanceof PessoaFisica){
             System.out.println("CPF: "+ ((PessoaFisica)p).getCpf());
         }else
