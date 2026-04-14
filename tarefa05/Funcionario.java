@@ -8,7 +8,7 @@ public class Funcionario {
         this.matricula = matricula;
         this.nome = nome;
     }
-
+    //Getters
     public int getmatricula(){
         return matricula;
     }
@@ -17,6 +17,7 @@ public class Funcionario {
         return nome;
     }
 
+    //Setters
     public void setmatricula(int matricula){
         this.matricula = matricula;
     }
