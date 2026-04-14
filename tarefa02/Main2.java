@@ -1,4 +1,6 @@
 package tarefa02;
+//Multiplos Construtores e Metodos
+//Fazendo Tudo na classe e a Main so imprimindo
 
 public class Main2 {
     public static void main(String[] args) {
