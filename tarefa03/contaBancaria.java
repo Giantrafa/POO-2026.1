@@ -1,4 +1,5 @@
 package tarefa03;
+//Private: Atributos e métodos só podem ser acessados dentro da própria classe.
 
 public class contaBancaria {
     private String nome;
